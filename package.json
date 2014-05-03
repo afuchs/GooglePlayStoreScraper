@@ -1,0 +1,23 @@
+{
+  "name": "GooglePlayStoreScraper",
+  "description": "Tool for accessing Google Play Store data programmatically.",
+  "version": "1.0.0",
+  "maintainers": [
+    {
+      "name": "Ari Fuchs",
+      "email": "afuchs1@gmail.com",
+      "web": "http://afuchs.com"
+    }
+  ],
+  "dependencies": {
+    "request": "*",
+    "cheerio": "*",
+    "querystring": "*"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/afuchs/GooglePlayStoreScraper"
+    }
+  ]
+}
