@@ -27,6 +27,7 @@ module.exports = {
 				inAppPurchases: null,
 				playStoreUrl: null,
 				description: null,
+				screenshots: null,
 				ratingValue: null,
 				ratingCount: null,
 				score: null,
@@ -60,6 +61,11 @@ module.exports = {
 				app.inAppPurchases = !(!$('.inapp-msg').html());
 				app.playStoreUrl = baseUrl + bundleId;
 				app.description = $('.id-app-orig-desc').html();
+				
+				app.screenshots = [];
+				$('.thumbnails img').each(function(i, item) {
+					app.screenshots.push($(item).attr('src'));
+				});
 
 				app.ratingCount = $('.details-section.reviews meta[itemprop=ratingCount]').attr('content');
 				app.ratingValue = $('.details-section.reviews meta[itemprop=ratingValue]').attr('content');

@@ -1,0 +1,5 @@
+- review scraper
+- search scraper
+- csv export
+- sql export
+- UI with textarea for dropping in bundleId's and a table view for output
